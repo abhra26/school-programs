@@ -10,4 +10,4 @@ with open("SPE") as fl:
                         if letter.isalnum() == False:
                             count += 1
 
-print(f'no.of special charectars: {count}')
+print(f'no.of special characters: {count}')

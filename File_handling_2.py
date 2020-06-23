@@ -13,4 +13,3 @@ with open("ABC") as fl:
 print(f' no. of lines ending with a :{count}')
 
 
-
