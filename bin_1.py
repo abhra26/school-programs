@@ -11,4 +11,4 @@ def add_to(file, data):
             ls = Empno + ' ' + name + ' ' + address + ' ' + salary + '\n'
             pickle.dump(ls, fl)
 
-add_to("bin_1_file",3)
+add_to("bin_1_file",5)
