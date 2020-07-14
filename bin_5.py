@@ -37,5 +37,16 @@ def costly(file_name):
 costly("STOCK.DAT")
 
 
+# f = open("STOCK.DAT","rb")
+# while True:
+#     try:
+#         line = pickle.load(f)
+#         print(line)
+#
+#     except:
+#         break
+#
+# f.close()
+
 
 

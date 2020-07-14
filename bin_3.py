@@ -14,7 +14,7 @@ def bin_file(file_name, data):
             ls = [roll,name,cl,sec,mob,marks]
             pickle.dump(ls, fl)
 
-bin_file("Student.Dat.Record", 3)
+# bin_file("Student.dat", 3)
 
 
 def update_rec(roll,file_name):
@@ -27,6 +27,7 @@ def update_rec(roll,file_name):
             line = pickle.load(f)
             if line[0]==roll:
                 print('please update record')
+                roll = int(input("enter roll number:"))
                 name = input("enter name:")
                 cl = int(input("enter class:"))
                 sec = input("enter section:")
@@ -50,9 +51,9 @@ def update_rec(roll,file_name):
 
     f.close()
 
-update_rec( 3, "Student.Dat.Record")
+update_rec(3, "Student.dat")
 
-f = open("student.dat.record","rb")
+f = open("Student.dat","rb")
 while True:
     try:
         line = pickle.load(f)

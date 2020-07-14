@@ -12,7 +12,7 @@ def add_to(file, data):
             ls = [Empno,name,address,salary]
             pickle.dump(ls, fl)
 
-# add_to("bin_1_file",3)
+add_to("bin_1_file",3)
 
 f = open("bin_1_file","rb")
 while True:

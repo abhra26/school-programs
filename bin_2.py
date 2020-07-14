@@ -13,7 +13,7 @@ def bin_file(file_name, data):
             ls = [roll,name,cl,sec,mob]
             pickle.dump(ls, fl)
 
-# bin_file("student.dat.record",3)
+# bin_file("student.dat",3)
 
 
 def delete_rec(roll,file_name):
@@ -41,9 +41,9 @@ def delete_rec(roll,file_name):
 
     f.close()
 
-delete_rec(2, "student.dat.record")
+delete_rec(2, "student.dat")
 
-f = open("student.dat.record","rb")
+f = open("student.dat","rb")
 while True:
     try:
         line = pickle.load(f)

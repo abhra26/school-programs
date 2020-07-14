@@ -11,7 +11,7 @@ def bin_file(file_name, data):
             ls = [s_adno,s_name,percent]
             pickle.dump(ls, fl)
 
-bin_file("STUDENT.DAT", 3)
+# bin_file("STUDENT.DAT", 5)
 
 def show_rec(file_name):
     import pickle
@@ -30,13 +30,13 @@ def show_rec(file_name):
 
 show_rec("STUDENT.DAT")
 
-f = open("STUDENT.DAT","rb")
-while True:
-    try:
-        line = pickle.load(f)
-        print(line)
+# f = open("STUDENT.DAT","rb")
+# while True:
+#     try:
+#         line = pickle.load(f)
+#         print(line)
+#
+#     except:
+#         break
 
-    except:
-        break
-
-f.close()
+# f.close()
