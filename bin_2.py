@@ -13,7 +13,7 @@ def bin_file(file_name, data):
             ls = [roll,name,cl,sec,mob]
             pickle.dump(ls, fl)
 
-bin_file("student.dat.record",3)
+# bin_file("student.dat.record",3)
 
 
 def delete_rec(roll,file_name):
